@@ -1,0 +1,34 @@
+Sample vaadin application that uses spring security as security provider. 
+The authentication is done outside of the application. So the vaadin application does not provide any login functionality.
+
+Possible next steps: Instantiate in applicationContext and call the secured service and check the authorization exceptions.
+
+Maven
+====================================================================================
+- install maven 3
+- execute command: mvn clean install
+ 
+Tomcat
+====================================================================================
+- install Tomcat 7
+- deploy war
+- open in web browser the url http://localhost:8080/vaadin-spring-jsp/
+- Login with one of the following users: 
+  * admin with password admin, 
+  * demo with password demo, 
+
+Eclipse
+====================================================================================
+I used Helios Eclipse IDE for Java EE Developers
+Recommended plugins:
+- m2e
+- m2e-extras (WTP plugin required only)
+- Vaadin eclipse plugin
+
+You can import the project via Maven->Existing Maven Projects.
+Execute following operations:
+- Maven->Update Dependencies
+- Maven->Update Project Configuration
+- RunAs->Maven Install
+- Project->Clean
+- Run As->Run on Server
