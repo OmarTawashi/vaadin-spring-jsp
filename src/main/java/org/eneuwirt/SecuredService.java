@@ -1,4 +1,4 @@
-package org.eneuwirt.vaadin.service;
+package org.eneuwirt;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 

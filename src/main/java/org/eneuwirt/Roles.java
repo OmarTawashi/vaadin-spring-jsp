@@ -1,4 +1,4 @@
-package org.eneuwirt.vaadin.security;
+package org.eneuwirt;
 
 public interface Roles {
 	

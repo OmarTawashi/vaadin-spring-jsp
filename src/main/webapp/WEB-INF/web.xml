@@ -9,7 +9,6 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-        	/WEB-INF/applicationContext.xml
             /WEB-INF/applicationContext-security.xml
         </param-value>
 
@@ -36,17 +35,17 @@
     </servlet-mapping>
     
     <servlet>
-		<servlet-name>Spring Application Servlet</servlet-name>
-		<servlet-class>org.eneuwirt.vaadin.servlet.SpringApplicationServlet</servlet-class>
-		<init-param>
-			<param-name>applicationBean</param-name>
-			<!-- Named defined by annotation in VaadinApp class -->
-			<param-value>vaadinApp</param-value>
-		</init-param>
-	</servlet>
+        <servlet-name>Vaadin Application Servlet</servlet-name>
+        <servlet-class>com.vaadin.terminal.gwt.server.ApplicationServlet</servlet-class>
+        <init-param>
+            <description>Vaadin application class to start</description>
+            <param-name>application</param-name>
+            <param-value>org.eneuwirt.MyVaadinApplication</param-value>
+        </init-param>
+    </servlet>
 
 	<servlet-mapping>
-		<servlet-name>Spring Application Servlet</servlet-name>
+		<servlet-name>Vaadin Application Servlet</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
 

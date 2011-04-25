@@ -1,13 +1,10 @@
-package org.eneuwirt.vaadin;
+package org.eneuwirt;
 
 import java.util.Collection;
 
-import org.eneuwirt.vaadin.security.Roles;
-import org.springframework.context.annotation.Scope;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Component;
 import org.springframework.web.context.WebApplicationContext;
 
 import com.vaadin.Application;
@@ -16,8 +13,6 @@ import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Label;
 import com.vaadin.ui.Window;
 
-@Component("vaadinApp")
-@Scope("prototype")
 public class MyVaadinApplication extends Application
 {
 	private static final long serialVersionUID = 1L;
